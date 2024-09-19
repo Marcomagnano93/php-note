@@ -9,10 +9,50 @@
 main{
     flex-grow: 1;
 }
+/* ***HEADER*** */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    font-size: 24px;
+}
+
+.bg_sand{
+    background-color: sandybrown;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* RESET */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+    color: currentColor !important;
 }
