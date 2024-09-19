@@ -5,3 +5,14 @@
     display: flex;
     flex-direction: column;
 }
+
+main{
+    flex-grow: 1;
+}
+
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
