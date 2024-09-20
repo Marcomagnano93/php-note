@@ -10,18 +10,19 @@
                 <h1>Le tue note</h1>
             </div>
             <div class="container">
-                <?php
-                    // uso i dati prisi dal note controller per impaginare il risultato:
 
+                 <!-- uso i dati presi dal note controller per impaginare il risultato: -->
+                <?php
                     if ($result->num_rows > 0) {
                         // Output di ogni riga
                         while($row = $result->fetch_assoc()) {
                             echo "Nota: " . $row["name"]. " " . $row["body"]. "<br>";
                         }
                     } else {
-                        echo "0 risultati";
+                        echo "non ci sono ancora note";
                     }
                 ?>
+
             </div>
             
          </main>
