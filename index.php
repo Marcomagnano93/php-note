@@ -4,36 +4,6 @@ require 'functions.php';
 
 require 'router.php';
 
-
-
-$servername = "localhost";
-$username = "root";  // Username di default per phpMyAdmin in localhost
-$password = "root";   
-$dbname = "notes_db";  
-
-
-// Creare la connessione
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-
-// Scrivere la query SQL
-$sql = "SELECT * FROM notes";
-
-// Eseguire la query
-$result = $conn->query($sql);
-
-
-if ($result->num_rows > 0) {
-    // Output di ogni riga
-    while($row = $result->fetch_assoc()) {
-        echo "Nota: " . $row["name"]. " " . $row["body"]. "<br>";
-    }
-} else {
-    echo "0 risultati";
-}
-
-
-
 // dd($result);
 
 
