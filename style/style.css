@@ -31,9 +31,13 @@ main{
     background-color: sandybrown;
 }
 
+/* ***NOTE page*** */
 
-
-
+.note_form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
 
 
